@@ -13,7 +13,7 @@ public class paranthesesString {
                 switch (c) {
                     case '(' -> stack.add(c);
                     case ')' -> {
-                        if (stack.peek().equals('('))
+                        if (!stack.isEmpty() && stack.peek().equals('('))
                             stack.pop();
                         else stack.push(c);
                     }
