@@ -2,7 +2,7 @@ package com.algos.otherQns;
 
 import java.util.Stack;
 
-public class paranthesesString {
+public class ParanthesesString {
     public int minParanthesesToRemoveToMakeItValid(String s){
         Stack<Character> stack = new Stack<>();
         //lee(t)cod(e))
