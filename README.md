@@ -5,6 +5,7 @@ Java-first repository for Data Structures & Algorithms questions organized by co
 ## Structure
 
 - `com.algos.arrays` - array-focused problems
+- `com.algos.arrays.intervals` - interval-pattern array problems
 - `com.algos.strings` - string-focused problems
 - `com.algos.graphs` - graph-focused problems
 - `com.algos.dp.lcs` - dynamic programming problems (currently Longest Common Subsequence)
