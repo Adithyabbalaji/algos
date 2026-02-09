@@ -1,7 +1,7 @@
 package com.algos.otherQns;
 
-public final class paranthesesStringTest {
-    private paranthesesStringTest() {
+public final class ParanthesesStringTest {
+    private ParanthesesStringTest() {
     }
 
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public final class paranthesesStringTest {
     }
 
     private static void testAlreadyValidString() {
-        paranthesesString solver = new paranthesesString();
+        ParanthesesString solver = new ParanthesesString();
 
         int minByFirstMethod = solver.minParanthesesToRemoveToMakeItValid("a(b)c");
         int minBySecondMethod = solver.minRemove("a(b)c");
@@ -26,7 +26,7 @@ public final class paranthesesStringTest {
     }
 
     private static void testExtraClosingParentheses() {
-        paranthesesString solver = new paranthesesString();
+        ParanthesesString solver = new ParanthesesString();
 
         int minByFirstMethod = solver.minParanthesesToRemoveToMakeItValid("lee(t)cod(e))");
         int minBySecondMethod = solver.minRemove("lee(t)cod(e))");
@@ -36,7 +36,7 @@ public final class paranthesesStringTest {
     }
 
     private static void testExtraOpeningParentheses() {
-        paranthesesString solver = new paranthesesString();
+        ParanthesesString solver = new ParanthesesString();
 
         int minByFirstMethod = solver.minParanthesesToRemoveToMakeItValid("((abc)");
         int minBySecondMethod = solver.minRemove("((abc)");
@@ -46,7 +46,7 @@ public final class paranthesesStringTest {
     }
 
     private static void testMixedWithLetters() {
-        paranthesesString solver = new paranthesesString();
+        ParanthesesString solver = new ParanthesesString();
 
         int minByFirstMethod = solver.minParanthesesToRemoveToMakeItValid("a)b(c)d");
         int minBySecondMethod = solver.minRemove("a)b(c)d");
@@ -56,7 +56,7 @@ public final class paranthesesStringTest {
     }
 
     private static void testOnlyLetters() {
-        paranthesesString solver = new paranthesesString();
+        ParanthesesString solver = new ParanthesesString();
 
         int minByFirstMethod = solver.minParanthesesToRemoveToMakeItValid("leetcode");
         int minBySecondMethod = solver.minRemove("leetcode");
@@ -66,7 +66,7 @@ public final class paranthesesStringTest {
     }
 
     private static void testBothMethodsReturnSameResult() {
-        paranthesesString solver = new paranthesesString();
+        ParanthesesString solver = new ParanthesesString();
         String input = "())(()";
 
         int minByFirstMethod = solver.minParanthesesToRemoveToMakeItValid(input);
